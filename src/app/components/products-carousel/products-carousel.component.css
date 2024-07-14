@@ -1,0 +1,43 @@
+.main-carousel-list {
+  padding: 20px;
+  position: relative;
+  margin-top: 110px;
+}
+
+.top-content {
+  margin-bottom: 40px;
+  padding: 0 0 10px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.188);
+}
+
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 15px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.custom-prev-arrow img {
+  transform: rotate(180deg);
+}
+
+.custom-prev-arrow {
+  right: 180px;
+}
+
+.custom-next-arrow {
+  right: 50px;
+}
+
+@media only screen and (max-width: 530px) {
+  .custom-arrow {
+    top: -10px;
+  }
+}

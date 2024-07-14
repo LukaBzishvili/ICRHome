@@ -1,0 +1,89 @@
+.hamburger-button {
+  display: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.hamburger-button .line {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 4px;
+  background-color: black;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 330px;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 999;
+  padding: 23px;
+}
+
+.menu.isActive {
+  transform: translateX(0);
+}
+
+.menu .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu .close .line1,
+.menu .close .line2 {
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  transition: transform 0.3s ease;
+}
+
+.menu .close .line1 {
+  transform: rotate(45deg) translate(15px, 18px);
+}
+
+.menu .close .line2 {
+  transform: rotate(-45deg) translate(-15px, 13px);
+}
+
+@media only screen and (max-width: 1024px) {
+  .hamburger-button {
+    display: block;
+  }
+}
+
+/* List */
+
+.categories-list {
+  margin-top: 30px;
+}
+
+.categories-list h5 {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.categories-list ul {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  margin: 0 0 10px 0;
+}
+
+.categories-list ul li {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 0 0 10px;
+  cursor: pointer;
+}
+
+.categories-list ul.active-ul {
+  max-height: 300px;
+}

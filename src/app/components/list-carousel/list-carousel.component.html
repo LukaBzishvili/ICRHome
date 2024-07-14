@@ -1,0 +1,24 @@
+<div class="main-carousel-list">
+  <!-- <div class="custom-arrow custom-prev-arrow">
+    <img src="../../../assets/images/arrowLeft.png" alt="Previous" />
+  </div> -->
+  <ngx-slick-carousel
+    #slickModal="slick-carousel"
+    [config]="slideConfig"
+    class="carousel-container"
+  >
+    <div ngxSlickItem *ngFor="let category of list" class="carousel-item">
+      <img
+        (click)="navigateToCatalog(category.name)"
+        [src]="category.image"
+        alt="{{ category.name }}"
+        class="carousel-image"
+      />
+      <p>{{ category.name }}</p>
+    </div>
+  </ngx-slick-carousel>
+
+  <!-- <div class="custom-arrow custom-next-arrow">
+    <img src="../../../assets/images/arrowRight.png" alt="Next" />
+  </div> -->
+</div>

@@ -1,0 +1,13 @@
+.header-content-container {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+  padding: 10px 0;
+}
+
+.global-container {
+  max-width: 1400px;
+  padding: 0 40px;
+  margin: 0 auto;
+}

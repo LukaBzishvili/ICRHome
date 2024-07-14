@@ -1,0 +1,28 @@
+<div class="main-carousel-list">
+  <div class="top-content">
+    <div class="title-container">
+      <h3>{{ title }}</h3>
+    </div>
+    <div [ngClass]="['custom-arrow', 'custom-prev-arrow', arrow1]">
+      <img src="../../../assets/images/slider-prev.svg" alt="Previous" />
+    </div>
+  </div>
+  <ngx-slick-carousel
+    #slickModal="slick-carousel"
+    [config]="slideConfig"
+    class="carousel-container"
+  >
+    <div ngxSlickItem *ngFor="let item of furnitureData" class="carousel-item">
+      <app-product-card
+        [productImage]="item.image"
+        [productName]="item.title"
+        [productType]="item.category"
+        [productPrice]="item.price + '₾'"
+        [isOnSale]="item.isOnSale"
+      ></app-product-card>
+    </div>
+  </ngx-slick-carousel>
+  <div [ngClass]="['custom-arrow', 'custom-next-arrow', arrow2]">
+    <img src="../../../assets/images/slider-next.svg" alt="Next" />
+  </div>
+</div>

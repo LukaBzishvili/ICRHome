@@ -1,0 +1,17 @@
+<div class="catalog-products-container">
+  <div class="catalog-products-title">
+    <h2>პროდუქტი</h2>
+    <p>{{ FurnitureData.length }} პროდუქტი</p>
+  </div>
+  <div class="catalog-products-list">
+    <div *ngFor="let catalogProduct of FurnitureData">
+      <app-product-card
+        [productImage]="catalogProduct.image"
+        [productName]="catalogProduct.title"
+        [productType]="catalogProduct.category"
+        [productPrice]="catalogProduct.price + '₾'"
+        [isOnSale]="false"
+      ></app-product-card>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+.carousel-image {
+  border-radius: 100%;
+  width: 120px;
+}
+
+.carousel-container {
+  margin: 200px 0 0 0;
+}
+
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 60px;
+}
+
+.main-carousel-list {
+  position: relative;
+}
+
+/* Buttons */
+
+.custom-arrow {
+  position: absolute;
+  z-index: 10;
+}
+
+.custom-prev-arrow {
+  top: 59px;
+}
+
+.custom-next-arrow {
+  top: 59px;
+  right: 0;
+}
+
+.custom-arrow img {
+  width: 40px;
+}

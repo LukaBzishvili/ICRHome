@@ -1,0 +1,16 @@
+.company-list-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.company-list-container img {
+  width: 200px;
+  cursor: pointer;
+}
+
+.company-list-container img:hover g {
+  color: red;
+}

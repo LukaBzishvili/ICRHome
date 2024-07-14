@@ -1,0 +1,11 @@
+<div class="product-container">
+  <div class="sale-container" *ngIf="isOnSale">
+    <span class="sale">Sale</span>
+  </div>
+  <div class="image-container">
+    <img src="{{ productImage }}" alt="product" />
+  </div>
+  <h3>{{ productName }}</h3>
+  <span class="product-type">{{ productType }}</span>
+  <p>{{ productPrice }}</p>
+</div>

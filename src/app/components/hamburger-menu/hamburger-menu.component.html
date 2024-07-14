@@ -1,0 +1,22 @@
+<div class="hamburger-container">
+  <div class="hamburger-button" (click)="toggleMenu()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <div class="menu" [class.isActive]="isActive">
+    <h4 class="title">კატეგორიები</h4>
+    <div class="close" (click)="toggleMenu()">
+      <div class="line1"></div>
+      <div class="line2"></div>
+    </div>
+    <div class="categories-list">
+      <div *ngFor="let category of categories">
+        <h5 (click)="setActiveUl(category)">{{ category.category }}</h5>
+        <ul [class.active-ul]="activeCategory === category">
+          <li *ngFor="let title of category.titles">{{ title.title }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

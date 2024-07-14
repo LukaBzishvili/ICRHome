@@ -1,0 +1,86 @@
+.filter-container {
+  padding-top: 200px;
+}
+
+.filter-container ul {
+  width: fit-content;
+}
+
+.filter-container ul li .toggle {
+  width: 230px;
+  font-size: 12px;
+  font-weight: 900;
+  border: 2px solid #ccc;
+  border-bottom: solid transparent;
+  border-left: solid transparent;
+  border-right: solid transparent;
+  border-style: dotted;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.filter-container ul li {
+  list-style: none;
+}
+
+fa-icon {
+  font-size: 14px;
+  color: grey;
+}
+
+/* Dropdown */
+
+.dropdown {
+  max-height: 0;
+  background-color: #f9f9f9;
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  width: 230px;
+  font-size: 12px;
+  font-weight: 900;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.dropdown ul {
+  list-style: none;
+}
+
+.dropdown ul li {
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.filter-container .opened {
+  max-height: 150px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .filter-container ul {
+    width: 100%;
+  }
+
+  .filter-container ul li .toggle {
+    width: 100%;
+  }
+
+  .filter-container {
+    width: 100%;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+<div class="filter-container">
+  <ul>
+    <li *ngFor="let item of filterItems">
+      <div class="toggle" (click)="toggleDropdown(item)">
+        <h2>{{ item.title }}</h2>
+        <fa-icon [icon]="faPlus"></fa-icon>
+      </div>
+      <div [ngClass]="{ opened: item.showDropdown }" class="dropdown">
+        <ul>
+          <li *ngFor="let option of item.options">
+            <input
+              type="checkbox"
+              [(ngModel)]="option.checked"
+              (change)="onCheckboxChange()"
+            />
+            <label>{{ option.label }}</label>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>

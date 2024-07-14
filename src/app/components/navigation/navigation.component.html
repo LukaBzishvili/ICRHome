@@ -1,0 +1,13 @@
+<div class="navigation-container">
+  <div *ngFor="let category of categories" class="category">
+    <h2 (click)="navigateToCatalog(category.category)">
+      {{ category.category }}
+    </h2>
+    <ul class="data">
+      <div class="triangle"></div>
+      <li *ngFor="let title of category.titles">
+        {{ title.title }}
+      </li>
+    </ul>
+  </div>
+</div>
