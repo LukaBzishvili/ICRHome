@@ -20,4 +20,14 @@ export class HeaderComponent {
     category: string;
     titles: Array<{ title: string }>;
   }> = [];
+
+  isLikedProductsOpen = false;
+
+  toggleLikedProducts() {
+    this.isLikedProductsOpen = !this.isLikedProductsOpen;
+  }
+
+  preventClick(event: Event) {
+    event.stopPropagation();
+  }
 }

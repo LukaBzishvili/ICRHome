@@ -11,7 +11,28 @@
         </div>
       </button>
       <button>
-        <mat-icon matBadge="8" class="heart-icon">favorite</mat-icon>
+        <mat-icon
+          (click)="toggleLikedProducts()"
+          matBadge="0"
+          class="heart-icon"
+          >favorite</mat-icon
+        >
+        <div
+          class="liked-products-container"
+          (click)="toggleLikedProducts()"
+          [class.isLikedProductsOpen]="isLikedProductsOpen"
+        >
+          <div class="liked-products" (click)="preventClick($event)">
+            <div class="liked-products-text">
+              <h4>სურვილების სია</h4>
+              <div class="liked-products-length">
+                <h5>სივთი სიაში <span>0</span></h5>
+                <span class="goto">კალათაში გადასვლა</span>
+              </div>
+            </div>
+            <div class="liked-products-content"></div>
+          </div>
+        </div>
       </button>
       <button>
         <mat-icon aria-hidden="true" role="img">person</mat-icon>

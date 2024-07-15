@@ -150,7 +150,7 @@ export const furnitureData: Furniture[] = [
     image:
       'https://icrhome.ge/dist/assets/images/catalog/250/FV22-17-519A-4-R_1.jpg',
     title: 'Comfortable Sofa',
-    category: 'Living Room',
+    category: 'ავეჯი',
     price: 499.99,
     isOnSale: false,
   },
@@ -158,7 +158,7 @@ export const furnitureData: Furniture[] = [
     image:
       'https://icrhome.ge/dist/assets/images/catalog/250/T7166A-1620-SHAKS-BK_1.jpg',
     title: 'Modern Dining Table',
-    category: 'Dining Room',
+    category: 'კაფე & ბარი',
     price: 299.99,
     isOnSale: true,
   },
@@ -166,7 +166,7 @@ export const furnitureData: Furniture[] = [
     image:
       'https://icrhome.ge/dist/assets/images/catalog/250/FB087-120-BR_1.jpg',
     title: 'King Size Bed',
-    category: 'Bedroom',
+    category: 'ავეჯი',
     price: 799.99,
     isOnSale: true,
   },
@@ -174,21 +174,21 @@ export const furnitureData: Furniture[] = [
     image:
       'https://icrhome.ge/dist/assets/images/catalog/250/NT-3276000695110-ARM_1.png',
     title: 'Ergonomic Office Chair',
-    category: 'Office',
+    category: 'საოფისე ავეჯი',
     price: 199.99,
     isOnSale: false,
   },
   {
     image: 'https://icrhome.ge/dist/assets/images/catalog/250/SAM01006_1.jpg',
     title: 'Wooden Coffee Table',
-    category: 'Living Room',
+    category: 'ავეჯი',
     price: 149.99,
     isOnSale: true,
   },
   {
     image: 'https://icrhome.ge/dist/assets/images/catalog/250/KARE-83179_0.jpg',
     title: 'Spacious Wardrobe',
-    category: 'Bedroom',
+    category: 'ავეჯი',
     price: 599.99,
     isOnSale: false,
   },
@@ -196,7 +196,7 @@ export const furnitureData: Furniture[] = [
     image:
       'https://icrhome.ge/dist/assets/images/catalog/250/24.0005-LINE-80X40_1.jpg',
     title: 'Bookshelf',
-    category: 'Office',
+    category: 'საოფისე ავეჯი',
     price: 129.99,
     isOnSale: true,
   },
@@ -204,14 +204,14 @@ export const furnitureData: Furniture[] = [
     image:
       'https://icrhome.ge/dist/assets/images/catalog/250/NT-3276007600650-GZ_1.png',
     title: 'Nightstand',
-    category: 'Bedroom',
+    category: 'ავეჯი',
     price: 89.99,
     isOnSale: false,
   },
   {
     image: 'https://icrhome.ge/dist/assets/images/catalog/250/KARE-87062_0.jpg',
     title: 'TV Stand',
-    category: 'Living Room',
+    category: 'ავეჯი',
     price: 199.99,
     isOnSale: true,
   },
@@ -219,9 +219,78 @@ export const furnitureData: Furniture[] = [
     image:
       'https://icrhome.ge/dist/assets/images/catalog/250/LB-IT-MB-175474_1.jpg',
     title: 'Bar Stool',
-    category: 'Dining Room',
+    category: 'კაფე & ბარი',
     price: 69.99,
     isOnSale: false,
+  },
+  // New products
+  {
+    image:
+      'https://icrhome.ge/dist/assets/images/catalog/250/HM-U2203-CC-28_1.jpg',
+    title: 'Outdoor Sofa',
+    category: 'გარე ავეჯი',
+    price: 399.99,
+    isOnSale: true,
+  },
+  {
+    image:
+      'https://icrhome.ge/dist/assets/images/catalog/250/NT-3276007398762-TB_1.png',
+    title: 'Patio Table',
+    category: 'გარე ავეჯი',
+    price: 249.99,
+    isOnSale: false,
+  },
+  {
+    image: 'https://icrhome.ge/dist/assets/images/catalog/250/KARE-55847_0.jpg',
+    title: 'Desk Lamp',
+    category: 'განათება',
+    price: 49.99,
+    isOnSale: true,
+  },
+  {
+    image: 'https://icrhome.ge/dist/assets/images/catalog/250/KARE-55800_0.jpg',
+    title: 'Wall Art',
+    category: 'დეკორი',
+    price: 79.99,
+    isOnSale: false,
+  },
+  {
+    image: 'https://icrhome.ge/dist/assets/images/catalog/250/KITCHEN-4_1.png',
+    title: 'Cooking Utensils',
+    category: 'სამზარეულოს აქსესუარები',
+    price: 29.99,
+    isOnSale: true,
+  },
+  {
+    image:
+      'https://icrhome.ge/dist/assets/images/catalog/250/HL-7445944025000_1.jpg',
+    title: 'Tablecloth',
+    category: 'ტექსტილი',
+    price: 19.99,
+    isOnSale: false,
+  },
+  {
+    image:
+      'https://icrhome.ge/dist/assets/images/catalog/250/DG18-F0112W-DB01-WT_1.jpg ',
+    title: 'Office Shelf',
+    category: 'საოფისე ავეჯი',
+    price: 99.99,
+    isOnSale: true,
+  },
+  {
+    image:
+      'https://icrhome.ge/dist/assets/images/catalog/250/NT-3276007600889-ARM_1.jpg',
+    title: 'Outdoor Chair',
+    category: 'გარე ავეჯი',
+    price: 89.99,
+    isOnSale: false,
+  },
+  {
+    image: 'https://icrhome.ge/dist/assets/images/catalog/250/KARE-55846_0.jpg',
+    title: 'Floor Lamp',
+    category: 'განათება',
+    price: 129.99,
+    isOnSale: true,
   },
 ];
 
